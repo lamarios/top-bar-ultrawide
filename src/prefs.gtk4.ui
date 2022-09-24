@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.10.3 -->
+<interface domain="my-gettext-domain">
+  <!-- interface-name prefs.gtk4.ui -->
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkAdjustment" id="mTopAdjustment">
+    <property name="page-increment">1.0</property>
+    <property name="page-size">1.0</property>
+    <property name="step-increment">1.0</property>
+    <property name="upper">10000</property>
+    <property name="value">0</property>
+    <property name="lower">0</property>
+  </object>
+  <object class="GtkAdjustment" id="mRightAdjustment">
+    <property name="page-increment">1.0</property>
+    <property name="page-size">1.0</property>
+    <property name="step-increment">1.0</property>
+    <property name="upper">10000</property>
+    <property name="value">0</property>
+    <property name="lower">0</property>
+  </object>
+  <object class="GtkAdjustment" id="mBottomAdjustment">
+    <property name="page-increment">1.0</property>
+    <property name="page-size">1.0</property>
+    <property name="step-increment">1.0</property>
+    <property name="upper">10000</property>
+    <property name="value">0</property>
+    <property name="lower">0</property>
+  </object>
+  <object class="GtkAdjustment" id="mLeftAdjustment">
+    <property name="page-increment">1.0</property>
+    <property name="page-size">1.0</property>
+    <property name="step-increment">1.0</property>
+    <property name="upper">10000</property>
+    <property name="value">0</property>
+    <property name="lower">0</property>
+  </object>
+  <object class="GtkAdjustment" id="bTopLeftAdjustment">
+    <property name="page-increment">1.0</property>
+    <property name="page-size">1.0</property>
+    <property name="step-increment">1.0</property>
+    <property name="upper">10000</property>
+    <property name="value">0</property>
+    <property name="lower">0</property>
+  </object>
+  <object class="GtkAdjustment" id="bTopRightAdjustment">
+    <property name="page-increment">1.0</property>
+    <property name="page-size">1.0</property>
+    <property name="step-increment">1.0</property>
+    <property name="upper">10000</property>
+    <property name="value">0</property>
+    <property name="lower">0</property>
+  </object>
+  <object class="GtkAdjustment" id="bBottomRightAdjustment">
+    <property name="page-increment">1.0</property>
+    <property name="page-size">1.0</property>
+    <property name="step-increment">1.0</property>
+    <property name="upper">10000</property>
+    <property name="value">0</property>
+    <property name="lower">0</property>
+  </object>
+  <object class="GtkAdjustment" id="bBottomLeftAdjustment">
+    <property name="page-increment">1.0</property>
+    <property name="page-size">1.0</property>
+    <property name="step-increment">1.0</property>
+    <property name="upper">10000</property>
+    <property name="value">0</property>
+    <property name="lower">0</property>
+  </object>
+  <template class="TopBarPositionPrefsWidget" parent="GtkBox">
+    <property name="halign">center</property>
+    <property name="margin-bottom">10</property>
+    <property name="margin-end">10</property>
+    <property name="margin-start">10</property>
+    <property name="margin-top">10</property>
+    <property name="valign">start</property>
+    <child>
+      <object class="GtkFlowBox">
+        <property name="halign">start</property>
+        <property name="margin-bottom">10</property>
+        <property name="margin-end">10</property>
+        <property name="margin-start">10</property>
+        <property name="margin-top">10</property>
+        <property name="valign">start</property>
+        <child>
+          <object class="GtkLabel" id="margin">
+            <property name="halign">start</property>
+            <property name="label">Margin (px):</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkFlowBox">
+            <property name="column-spacing">3</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="top">
+                <property name="label">Top</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="mTop">
+                <property name="adjustment">mTopAdjustment</property>
+                <property name="climb-rate">1.0</property>
+                <property name="numeric">True</property>
+                <signal name="value-changed" handler="onMarginTopChanged" swapped="no"/>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="right">
+                <property name="label">Right</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="mRight">
+                <property name="adjustment">mRightAdjustment</property>
+                <property name="climb-rate">1.0</property>
+                <property name="numeric">True</property>
+                <signal name="value-changed" handler="onMarginRightChanged" swapped="no"/>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="bottom">
+                <property name="label">Bottom</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="mBottom">
+                <property name="adjustment">mBottomAdjustment</property>
+                <property name="climb-rate">1.0</property>
+                <property name="numeric">True</property>
+                <signal name="value-changed" handler="onMarginBottomChanged" swapped="no"/>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="left">
+                <property name="label">Left</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="mLeft">
+                <property name="adjustment">mLeftAdjustment</property>
+                <property name="climb-rate">1.0</property>
+                <property name="numeric">True</property>
+                <signal name="value-changed" handler="onMarginLeftChanged" swapped="no"/>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="borderRadius">
+            <property name="halign">start</property>
+            <property name="label">Border radius (px):</property>
+            <property name="margin-top">15</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkFlowBox">
+            <child>
+              <object class="GtkLabel" id="topLeft">
+                <property name="label">Top left</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="bTopLeft">
+                <property name="adjustment">bTopLeftAdjustment</property>
+                <property name="climb-rate">1.0</property>
+                <property name="numeric">True</property>
+                <signal name="value-changed" handler="onBorderRadiusTopLeftChanged" swapped="no"/>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="topRight">
+                <property name="label">Top right</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="bTopRight">
+                <property name="adjustment">bTopRightAdjustment</property>
+                <property name="climb-rate">1.0</property>
+                <property name="numeric">True</property>
+                <signal name="value-changed" handler="onBorderRadiusTopRightChanged" swapped="no"/>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="bottomRight">
+                <property name="label">Bottom right</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="bBottomRight">
+                <property name="adjustment">bBottomRightAdjustment</property>
+                <property name="climb-rate">1.0</property>
+                <property name="numeric">True</property>
+                <signal name="value-changed" handler="onBorderRadiusBottomRightChanged" swapped="no"/>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="bottomLeft">
+                <property name="label">Bottom left</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="bBottomLeft">
+                <property name="adjustment">bBottomLeftAdjustment</property>
+                <property name="climb-rate">1.0</property>
+                <property name="numeric">True</property>
+                <signal name="value-changed" handler="onBorderRadiusBottomLeftChanged" swapped="no"/>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

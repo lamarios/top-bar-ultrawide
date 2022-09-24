@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema id="com.ftpix.topbarposition" path="/com/ftpix/topbarposition/">
+        <key type="i" name="margin-top">
+            <default>0</default>
+            <summary>Top bar top margin</summary>
+            <description>Top bar top margin</description>
+        </key>
+        <key type="i" name="margin-bottom">
+            <default>0</default>
+            <summary>Top bar bottom margin</summary>
+            <description>Top bar bottom margin</description>
+        </key>
+        <key type="i" name="margin-left">
+            <default>0</default>
+            <summary>Top bar left margin</summary>
+            <description>Top bar left margin</description>
+        </key>
+        <key type="i" name="margin-right">
+            <default>0</default>
+            <summary>Top bar right margin</summary>
+            <description>Top bar right margin</description>
+        </key>
+        <key type="i" name="border-radius-top-left">
+            <default>0</default>
+            <summary>Top bar top left border radius</summary>
+            <description>Top bar top left border radius</description>
+        </key>
+        <key type="i" name="border-radius-top-right">
+            <default>0</default>
+            <summary>Top bar top right border radius</summary>
+            <description>Top bar top right border radius</description>
+        </key>
+        <key type="i" name="border-radius-bottom-right">
+            <default>0</default>
+            <summary>Top bar bottom right border radius</summary>
+            <description>Top bar bottom right border radius</description>
+        </key>
+        <key type="i" name="border-radius-bottom-left">
+            <default>0</default>
+            <summary>Top bar bottom left border radius</summary>
+            <description>Top bar bottom left border radius</description>
+        </key>
+    </schema>
+</schemalist>

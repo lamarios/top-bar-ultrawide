@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.10.3" target_tk="gtk-4.0">
+  <ui>
+	(2,1,"prefs.gtk4.ui","prefs.gtk4.ui",None,None,None,None,None,None)
+  </ui>
+  <ui_library>
+	(2,"gtk","4.0",None)
+  </ui_library>
+  <object>
+	(2,1,"GtkBox","TopBarPositionPrefsWidget",None,None,None,None,None),
+	(2,21,"GtkAdjustment","spinnerAdjustment",None,None,None,None,None),
+	(2,42,"GtkFlowBox",None,1,None,None,None,None),
+	(2,43,"GtkLabel","margin",42,None,None,None,None),
+	(2,44,"GtkFlowBox",None,42,None,None,None,1),
+	(2,45,"GtkLabel","top",44,None,None,None,None),
+	(2,46,"GtkSpinButton","mTop",44,None,None,None,1),
+	(2,47,"GtkLabel","right",44,None,None,None,2),
+	(2,48,"GtkSpinButton","mRight",44,None,None,None,3),
+	(2,49,"GtkLabel","bottom",44,None,None,None,4),
+	(2,50,"GtkSpinButton","mBottom",44,None,None,None,5),
+	(2,51,"GtkLabel","left",44,None,None,None,6),
+	(2,52,"GtkSpinButton","mLeft",44,None,None,None,7),
+	(2,53,"GtkLabel","borderRadius",42,None,None,None,2),
+	(2,54,"GtkFlowBox",None,42,None,None,None,3),
+	(2,55,"GtkLabel","topLeft",54,None,None,None,None),
+	(2,56,"GtkSpinButton","bTopLeft",54,None,None,None,1),
+	(2,57,"GtkLabel","topRight",54,None,None,None,2),
+	(2,58,"GtkSpinButton","bTopRight",54,None,None,None,3),
+	(2,59,"GtkLabel","bottomRight",54,None,None,None,4),
+	(2,60,"GtkSpinButton","bBottomRight",54,None,None,None,5),
+	(2,61,"GtkLabel","bottomLeft",54,None,None,None,6),
+	(2,62,"GtkSpinButton","bBottomLeft",54,None,None,None,7)
+  </object>
+  <object_property>
+	(2,1,"GtkWidget","halign","center",None,None,None,None,None),
+	(2,1,"GtkWidget","margin-bottom","10",None,None,None,None,None),
+	(2,1,"GtkWidget","margin-end","10",None,None,None,None,None),
+	(2,1,"GtkWidget","margin-start","10",None,None,None,None,None),
+	(2,1,"GtkWidget","margin-top","10",None,None,None,None,None),
+	(2,1,"GtkWidget","valign","start",None,None,None,None,None),
+	(2,21,"GtkAdjustment","page-increment","1.0",None,None,None,None,None),
+	(2,21,"GtkAdjustment","page-size","1.0",None,None,None,None,None),
+	(2,21,"GtkAdjustment","step-increment","1.0",None,None,None,None,None),
+	(2,42,"GtkWidget","halign","start",None,None,None,None,None),
+	(2,42,"GtkWidget","margin-bottom","10",None,None,None,None,None),
+	(2,42,"GtkWidget","margin-end","10",None,None,None,None,None),
+	(2,42,"GtkWidget","margin-start","10",None,None,None,None,None),
+	(2,42,"GtkWidget","margin-top","10",None,None,None,None,None),
+	(2,42,"GtkWidget","valign","start",None,None,None,None,None),
+	(2,43,"GtkLabel","label","Margin:",None,None,None,None,None),
+	(2,43,"GtkWidget","halign","start",None,None,None,None,None),
+	(2,44,"GtkFlowBox","column-spacing","3",None,None,None,None,None),
+	(2,44,"GtkOrientable","orientation","vertical",None,None,None,None,None),
+	(2,45,"GtkLabel","label","Top",None,None,None,None,None),
+	(2,46,"GtkSpinButton","adjustment","21",None,None,None,None,None),
+	(2,46,"GtkSpinButton","climb-rate","1.0",None,None,None,None,None),
+	(2,46,"GtkSpinButton","numeric","True",None,None,None,None,None),
+	(2,47,"GtkLabel","label","Right",None,None,None,None,None),
+	(2,49,"GtkLabel","label","Bottom",None,None,None,None,None),
+	(2,51,"GtkLabel","label","Left",None,None,None,None,None),
+	(2,53,"GtkLabel","label","Border radius:",None,None,None,None,None),
+	(2,53,"GtkWidget","halign","start",None,None,None,None,None),
+	(2,53,"GtkWidget","margin-top","15",None,None,None,None,None),
+	(2,55,"GtkLabel","label","Top left",None,None,None,None,None),
+	(2,57,"GtkLabel","label","Top right",None,None,None,None,None),
+	(2,59,"GtkLabel","label","Bottom right",None,None,None,None,None),
+	(2,61,"GtkLabel","label","Bottom left",None,None,None,None,None)
+  </object_property>
+  <object_signal>
+	(17,2,46,"GtkSpinButton","value-changed","onMarginTopChanged",None,None,"yes",None,None),
+	(18,2,48,"GtkSpinButton","value-changed","onMarginRightChanged",None,None,"yes",None,None),
+	(19,2,50,"GtkSpinButton","value-changed","onMarginBottomChanged",None,None,"yes",None,None),
+	(20,2,52,"GtkSpinButton","value-changed","onMarginLeftChanged",None,None,"yes",None,None),
+	(21,2,56,"GtkSpinButton","value-changed","onBorderRadiusTopLeftChanged",None,None,"yes",None,None),
+	(22,2,58,"GtkSpinButton","value-changed","onBorderRadiusTopRightChanged",None,None,"yes",None,None),
+	(23,2,60,"GtkSpinButton","value-changed","onBorderRadiusBottomRightChanged",None,None,"yes",None,None),
+	(24,2,62,"GtkSpinButton","value-changed","onBorderRadiusBottomLeftChanged",None,None,"yes",None,None)
+  </object_signal>
+</cambalache-project>
