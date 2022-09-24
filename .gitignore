@@ -1,0 +1,6 @@
+/.idea/
+/build/
+/src/stylesheet.css
+/src/stylesheet.css.map
+!/build/
+!/.idea/
