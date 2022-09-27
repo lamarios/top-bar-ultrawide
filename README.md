@@ -18,8 +18,11 @@ cd top-bar-ultrawide
 ```
 
 Edit the file in *src/stylesheet.css*
+
 the margin follows the order: top right bottom left
+
 the border radius order: top-left top-right bottom-right bottom-left
+
 
 then install the extension:
 ```
